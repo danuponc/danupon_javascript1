@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Basic Event</title>
+</head>
+<body>
+ข้อมูลเพิ่มเติม : <a id="danupon" href="http://www.danupon.com">danupon.com</a>
+<script type="text/javascript">
+	var danupon = document.getElementById("danupon");
+	danupon.onclick = function() {
+		open(this.href,'_blank','width=500,height=500');
+		return false;
+	};
+</script>
+</body>
+</html>

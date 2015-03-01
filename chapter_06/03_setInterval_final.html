@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Set Interval</title>
+<script type="text/javascript">
+	var i = 0;
+	var ti;
+	function countUp() {
+		ti = setInterval(function() {
+			document.getElementById("result").innerHTML = i;
+			i++;
+		},1000);
+	}
+	function stopCount() {
+		clearInterval(ti);
+	}
+	function setZero() {
+		i = 0;
+		document.getElementById("result").innerHTML = i;
+	}
+</script>
+</head>
+<body>
+<button onClick="countUp();">Count Up</button> <button onClick="stopCount();">Stop</button> <button onClick="setZero();">Set Zero</button>
+<div id="result"></div>
+</body>
+</html>

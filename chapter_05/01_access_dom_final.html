@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML DOM</title>
+<script type="text/javascript">
+function h3Style() {
+	var h3 = document.getElementsByTagName("h3");
+	//alert(h3.length);
+	h3.item(0).style.backgroundColor = 'red';
+	document.get
+}
+
+function ulStyle() {
+	var ul = document.getElementById("ul_list");
+	ul.style.border = "1px solid blue";
+}
+function classStyle() {
+	var cls = document.getElementsByClassName("p_class");
+	cls.item(0).style.fontStyle = "italic";
+	cls.item(0).style.color = '#FF9933';
+}
+</script>
+</head>
+<body>
+<h3>HTML DOM ACCESS BY JAVASCRIPT</h3>
+<p class="p_class">การเข้าถึง HTML DOM ด้วย JavaScript สามารถเข้าถึงโดยชื่อของแท็ก id หรือ คลาสของอิลิเมนต์ต่าง ๆ ใน HTML</p>
+<ul id="ul_list">
+	<li>getElementsByTagName</li>
+    <li>getElementsByClassName</li>
+     <li>getElementById</li>
+</ul>
+<button onClick="h3Style();">กำหนด h3 style</button> <button onClick="ulStyle();">กำหนด #ul_list style</button> <button onClick="classStyle();">กำหนด .p_class style</button>
+</body>
+</html>

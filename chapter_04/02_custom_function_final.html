@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Custom Function</title>
+<script type="text/javascript">
+	// สร้างฟังก์ชั่นเอง
+	function showAlert() {
+		alert("ฟังก์ชั่น showAlert");
+	}
+	
+	function countStr() {
+		var str = document.getElementById("txtBox").value;
+		alert("จำนวน "+str.length+" ตัวอักษร");
+	}
+</script>
+</head>
+<body>
+<button onClick="showAlert()">showAlert</button><br />
+<input type="text" id="txtBox" name="txtBox" /> <button onClick="countStr()">นับจำนวนตัวอักษรที่ป้อน</button>
+</body>
+</html>

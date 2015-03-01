@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Set Timeout</title>
+<script type="text/javascript">
+var to;
+function clock() {
+	to = setTimeout(function() {
+		document.getElementById("result").innerHTML = "หมดเวลาที่ตั้งไว้";
+	},
+	5000);
+}
+function cancelClock() {
+	clearTimeout(to);
+}
+</script>
+</head>
+<body>
+<button onClick="clock();">setTimeOut</button><button onClick="cancelClock();">Cancel</button>
+<div id="result"></div>
+</body>
+</html>

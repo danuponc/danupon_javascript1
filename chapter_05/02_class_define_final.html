@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Class Define</title>
+<style type="text/css">
+.box1 {
+	background-color:#FFFFCC;
+	border: 1px dotted #F63;
+	width: 400px;
+	font-size:12px;
+}
+</style>
+<script type="text/javascript">
+	function setBox1() {
+		var b = document.getElementsByTagName("p");
+		//b.item(1).className = "box1";
+		for(i=0;i<b.length;i++) {
+			b.item(i).className = "box1";
+		}
+	}
+	function unSetBox1() {
+		var b = document.getElementsByTagName("p");
+		//b.item(1).className = "";
+		for(i=0;i<b.length;i++) {
+			b.item(i).className = "";
+		}
+	}
+</script>
+</head>
+<body>
+<h4>การกำหนดชื่อคลาสให้กับ DOM</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+<button onClick="setBox1();">setBox1</button>
+<button onClick="unSetBox1();">unSetBox1</button>
+</body>
+</html>
